@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="350.0" prefWidth="383.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.tabs.TasksController">
+   <children>
+      <Button fx:id="TBtn1" layoutX="166.0" layoutY="255.0" mnemonicParsing="false" onAction="#BtnTSaveClicked" text="Save" />
+      <TextArea fx:id="TTextArea1" layoutX="11.0" layoutY="22.0" prefHeight="217.0" prefWidth="360.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="613.0" prefWidth="590.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MyViewController">
+   <children>
+      <Label layoutX="190.0" layoutY="14.0" prefHeight="35.0" prefWidth="211.0" text="My Daily Scheduler">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="8.0" layoutY="65.0" prefHeight="21.0" prefWidth="581.0" text="If I try best and fail, well, I have tried my best - Steve Jobs" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TabPane layoutX="14.0" layoutY="98.0" prefHeight="460.0" prefWidth="561.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab fx:id="dailyChecktab" text="Daily Checks">
+               <content>
+               <fx:include source="tabs/DailyChecks.fxml" />
+               </content>
+          </Tab>
+          <Tab fx:id="remindersTab" text="Reminders">
+               <content>
+               <fx:include source="tabs/Reminders.fxml" />
+               </content>
+          </Tab>
+            <Tab fx:id="tasksTab" text="Tasks">
+               <content>
+               <fx:include source="tabs/Tasks.fxml" />
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
